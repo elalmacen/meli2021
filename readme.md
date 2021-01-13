@@ -23,13 +23,21 @@ https://www.dropbox.com/t/5sPQDqbGCDa0AMBE
 
     npm start
 
-Endpoints:
+### Endpoints back
 
-http://localhost:3011/api/items?q=q
-http://localhost:3011/api/items/:item
+    http://localhost:3011/api/items?q=q
+
+    http://localhost:3011/api/items/:item
 
 ### Desde /front
 
     npm start
 
-Entrar en http://localhost:3000
+### API test
+
+    cd back/
+    npm test
+
+### URL FRONT
+
+    http://localhost:3000
