@@ -1,8 +1,8 @@
 # Challenge Mercado Libre 2021
 
-Solucion:
+Solución:
 
-https://dropbox.com/
+https://www.dropbox.com/t/5sPQDqbGCDa0AMBE
 
 ## Requisitos
 
@@ -24,8 +24,8 @@ https://dropbox.com/
     npm start
 
 Endpoints:
-http://localhost:3011/api/items?q=q
 
+http://localhost:3011/api/items?q=q
 http://localhost:3011/api/items/:item
 
 ### Desde /front
