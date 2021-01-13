@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  app:
+    build:
+      context: ./
+      dockerfile: ./docker/Dockerfile
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    container_name: meli-node-app
+    restart: always
+    ports:
+      - 80:3011
+    command: bash -c "npm install && npm start"
