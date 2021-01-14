@@ -24,6 +24,12 @@ function SearchBox() {
         setQuery(event.target.value);
     }    
 
+    const handleKeyDown = (event) => {
+        if (event.key === 'Enter') {
+            search();
+        }
+      }
+
     return (
         <Row className="searchbox-view">
             <Col xs lg="1">
@@ -36,6 +42,7 @@ function SearchBox() {
                             name='search'
                             value={query}
                             onChange={handleQuerySearch}
+                            onKeyDown={handleKeyDown}
                             placeholder='Nunca dejes de buscar'
                             autoComplete="false"
                         />
