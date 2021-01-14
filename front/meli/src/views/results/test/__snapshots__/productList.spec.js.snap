@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test searchBox component renders without crashing 1`] = `
+<Fragment>
+  <BreadCrumb
+    categories={
+      Array [
+        "batman",
+        "robin",
+      ]
+    }
+  />
+  <Container
+    className="search-list"
+    fluid={false}
+  >
+    <ol>
+      <Card
+        key="0"
+        product={
+          Object {
+            "free_shipping": "price free",
+            "id": 12,
+            "picture": "https://http2.mlstatic.com/D_NQ_NP_848472-MLA43108239303_082020-O.webp",
+            "price": Object {
+              "amount": 20,
+              "decimals": 1,
+            },
+            "region": "Villa del parque",
+            "title": "batman",
+          }
+        }
+      />
+    </ol>
+  </Container>
+</Fragment>
+`;

@@ -38,6 +38,10 @@ https://www.dropbox.com/t/5sPQDqbGCDa0AMBE
     cd back/
     npm test
 
+### Front test
+
+    npm run test -- --coverage --watchAll=false --u
+
 ### URL FRONT
 
     http://localhost:3000

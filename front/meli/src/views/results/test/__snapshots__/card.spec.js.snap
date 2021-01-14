@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test searchBox component renders with product 1`] = `
+<li>
+  <Link
+    to="/items/12"
+  >
+    <Row
+      noGutters={false}
+    >
+      <Col
+        md={2}
+        xs={12}
+      >
+        <img
+          alt="thumbnail"
+          className="img-fluid picture"
+          height={180}
+          src="https://http2.mlstatic.com/D_NQ_NP_848472-MLA43108239303_082020-O.webp"
+          width={180}
+        />
+      </Col>
+      <Col
+        md={7}
+        xs={12}
+      >
+        <p
+          className="price free"
+        >
+          <CurrencyFormat
+            allowNegative={true}
+            decimalSeparator=","
+            displayType="text"
+            fixedDecimalScale={false}
+            isAllowed={[Function]}
+            isNumericString={false}
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onMouseUp={[Function]}
+            onValueChange={[Function]}
+            prefix="$ "
+            suffix=""
+            thousandSeparator="."
+            thousandSpacing="3"
+            type="text"
+            value={20}
+          />
+          <span
+            className="decimals"
+          >
+            1
+          </span>
+        </p>
+        <h2>
+          batman
+        </h2>
+      </Col>
+      <Col
+        md={3}
+        xs={12}
+      >
+        <span>
+          Villa del parque
+        </span>
+      </Col>
+    </Row>
+  </Link>
+</li>
+`;

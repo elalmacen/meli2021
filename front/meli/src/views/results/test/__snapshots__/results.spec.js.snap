@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test searchBox component renders without crashing 1`] = `
+<Fragment>
+  <ProductList
+    categories={Array []}
+    products={Array []}
+  />
+</Fragment>
+`;

@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test searchBox component go home 1`] = `
+<Row
+  className="searchbox-view"
+  noGutters={false}
+>
+  <Col
+    lg="1"
+    xs={true}
+  >
+    <img
+      alt="MercadoLibre"
+      className="logo"
+      onClick={[Function]}
+      src="logo_mercado_libre.png"
+    />
+  </Col>
+  <Col>
+    <div
+      className="form"
+    >
+      <input
+        autoComplete="false"
+        name="search"
+        onChange={[Function]}
+        placeholder="Nunca dejes de buscar"
+        type="text"
+        value=""
+      />
+      <button
+        onClick={[Function]}
+      >
+        <img
+          alt="Search"
+          className="icon-search"
+          src="ic_search.png"
+        />
+      </button>
+    </div>
+  </Col>
+</Row>
+`;
+
+exports[`test searchBox component renders without crashing 1`] = `
+<Row
+  className="searchbox-view"
+  noGutters={false}
+>
+  <Col
+    lg="1"
+    xs={true}
+  >
+    <img
+      alt="MercadoLibre"
+      className="logo"
+      onClick={[Function]}
+      src="logo_mercado_libre.png"
+    />
+  </Col>
+  <Col>
+    <div
+      className="form"
+    >
+      <input
+        autoComplete="false"
+        name="search"
+        onChange={[Function]}
+        placeholder="Nunca dejes de buscar"
+        type="text"
+        value=""
+      />
+      <button
+        onClick={[Function]}
+      >
+        <img
+          alt="Search"
+          className="icon-search"
+          src="ic_search.png"
+        />
+      </button>
+    </div>
+  </Col>
+</Row>
+`;

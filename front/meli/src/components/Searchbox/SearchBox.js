@@ -3,50 +3,46 @@ import { Col, Row } from 'react-bootstrap';
 import logo from '../../assets/statics/logo_mercado_libre.png';
 import searchIco from '../../assets/statics/ic_search.png';
 
-function SearchBox(props) {
+function SearchBox() {
     const [query, setQuery] = useState('');
     
-    const goHome = (event) => {
-        event.preventDefault();
-        props.props.history.push("/");
+    const goHome = () => {
+        window.location.assign('/');
     }
     
-    const search = (event) => {
-        event.preventDefault();
+    const search = () => {
         let url = `/items?search=${query}`;        
 
         const isMlId = query.match(/MLA[0-9]/i);
         if (isMlId !== null) {
             url = `/items/${query}`;
         }
-        
-        props.props.history.push(url);
+        window.location.href = url;        
     }	
 
     const handleQuerySearch = (event) => {
-        event.preventDefault();
         setQuery(event.target.value);
     }    
 
     return (
-        <Row className="justify-content-md-center margin-side-80">
+        <Row className="searchbox-view">
             <Col xs lg="1">
-                <img src={logo} alt='MercadoLibre' className='logo' onClick={event => goHome(event)} />
+                <img src={logo} alt='MercadoLibre' className='logo' onClick={goHome} />
             </Col>
             <Col>
-                <form action='/items/' method='get'>
-                    <input
-                        type='text'
-                        name='search'
-                        value={query}
-                        onChange={handleQuerySearch}
-                        placeholder='Nunca dejes de buscar'
-                        autoComplete="false"
-                    />
-                    <button type='submit' onClick={event => search(event)}>
-                        <img src={searchIco} alt='Search' className='icon-search'/>
-                    </button>
-                </form>
+                    <div className="form">
+                        <input
+                            type='text'
+                            name='search'
+                            value={query}
+                            onChange={handleQuerySearch}
+                            placeholder='Nunca dejes de buscar'
+                            autoComplete="false"
+                        />
+                        <button onClick={search}>
+                            <img src={searchIco} alt='Search' className='icon-search'/>
+                        </button>
+                    </div>
             </Col>
         </Row>        
     );

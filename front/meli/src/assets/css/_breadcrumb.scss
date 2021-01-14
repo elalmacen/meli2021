@@ -1,0 +1,27 @@
+.breadcrumb-view {
+    margin: 0;
+    padding: 0;
+
+    .breadcrumb {
+        background: $grey3;
+        padding: 16px 0 0 0;
+        margin: 0;
+        font-size: 14px;
+        >li+li:before {
+            padding: 0 5px 0 0;
+            color: $grey2;
+            content: ">";
+        }
+        
+        li a {
+            color: $grey2;
+            font-size: 14px;
+        }
+        
+        li.active {
+            color: $grey2;
+            font-weight: 700;
+            font-size: 14px;
+        }    
+    }
+}

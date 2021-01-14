@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test detail/detail view renders without crashing 1`] = `
+<Fragment>
+  <Product
+    categories={Array []}
+    notFound={false}
+    product={Array []}
+  />
+</Fragment>
+`;

@@ -1,0 +1,42 @@
+header {
+    width: 100%;
+    max-width: 100%;
+    background: $yellow;
+    padding: 10px 0;    
+
+    img.logo {
+        cursor: pointer;
+    }
+
+    div.searchbox-view {
+        div.col:nth-child(2) {
+            padding-right: 0;
+        }
+    }
+
+    div.form {
+        input {
+            border: none;
+            border-radius: 3px 0 0 3px;
+            height: 34px;;
+            width: 95%;
+            padding: 0 15px;
+            color: $grey1;
+            font-size: 18px;
+        }
+
+        button {
+            vertical-align: top;
+            height: 34px;;
+            background: $grey3;
+            border: none;
+            border-radius: 0 3px 3px 0;
+            width: 35px;
+            .icon-search {
+                height: 28px;
+                width: 28px;
+                padding: 5px;
+            }
+        }
+    }
+} 

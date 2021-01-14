@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test detail/product view renders without crashing 1`] = `
+<Fragment>
+  <BreadCrumb
+    categories={
+      Array [
+        "batman",
+        "robin",
+      ]
+    }
+  />
+  <Col
+    className="product-view"
+  >
+    <Row
+      noGutters={false}
+    >
+      <Col
+        md={8}
+        xs={12}
+      >
+        <img
+          alt="thumbnail"
+          src="http://http2.mlstatic.com/D_916062-MLA43654417337_102020-I.jpg"
+        />
+      </Col>
+      <Col
+        md={4}
+        xs={12}
+      >
+        <div
+          className="new"
+        >
+          Nuevo
+           - 
+          0 vendido
+        </div>
+        <h2
+          className="product-title"
+        >
+          Lorem Impsum
+        </h2>
+        <CurrencyFormat
+          allowNegative={true}
+          className="price"
+          decimalSeparator=","
+          displayType="text"
+          fixedDecimalScale={false}
+          isAllowed={[Function]}
+          isNumericString={false}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onMouseUp={[Function]}
+          onValueChange={[Function]}
+          prefix="$ "
+          suffix=""
+          thousandSeparator="."
+          thousandSpacing="3"
+          type="text"
+          value={185000}
+        />
+        <Button
+          active={false}
+          disabled={false}
+          variant="primary"
+        >
+          Comprar
+        </Button>
+      </Col>
+    </Row>
+    <Row
+      noGutters={false}
+    >
+      <Col
+        md={12}
+        xs={12}
+      >
+        <div
+          className="description"
+        >
+          <h3>
+            Descripción del producto
+          </h3>
+          <p>
+            Lorem Impsum
+          </p>
+        </div>
+      </Col>
+    </Row>
+  </Col>
+</Fragment>
+`;

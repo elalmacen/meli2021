@@ -4,9 +4,9 @@ import Loader from '../../components/Loader/Loader';
 import useFetchDataSearch from "../../hooks/useFetchDataSearch";
 import '../../App.scss';
 
-function Results(props) {
-    const [products, categories, loading] = useFetchDataSearch(props); 
-    
+function Results({searchParam}) {
+    const [products, categories, loading] = useFetchDataSearch(searchParam);     
+
     return (
         <>            
             {(loading) 

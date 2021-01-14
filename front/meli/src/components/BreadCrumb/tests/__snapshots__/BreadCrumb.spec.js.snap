@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test breadCrumb component renders without crashing 1`] = `
+<Col
+  className="breadcrumb-view"
+>
+  <Breadcrumb
+    label="breadcrumb"
+    listProps={Object {}}
+  />
+</Col>
+`;
+
+exports[`test breadCrumb component renders without crashing 2`] = `
+<Col
+  className="breadcrumb-view"
+>
+  <Breadcrumb
+    label="breadcrumb"
+    listProps={Object {}}
+  >
+    <BreadcrumbItem
+      active={false}
+      key="0"
+      linkProps={Object {}}
+    >
+      batman
+    </BreadcrumbItem>
+    <BreadcrumbItem
+      active={true}
+      key="1"
+      linkProps={Object {}}
+    >
+      robin
+    </BreadcrumbItem>
+  </Breadcrumb>
+</Col>
+`;

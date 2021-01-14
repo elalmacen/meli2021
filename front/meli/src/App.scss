@@ -8,6 +8,11 @@ $white: #fff;
 $black: #000;
 $padding1: 16px;
 
+@import './assets/css/header';
+@import './assets/css/breadcrumb';
+@import './assets/css/search';
+@import './assets/css/product';
+
 *{
     margin: 0 auto;
     padding: 0;
@@ -16,162 +21,8 @@ $padding1: 16px;
 
 body {
     height: 100%;
-    background: $grey3;
-
-    header {
-        width: 100%;
-        max-width: 100%;
-        background: $yellow;
-        padding: 10px 0;
-        .margin-side-80 {
-          margin: 0 80px;
-        }
-        img.logo {
-            cursor: pointer;
-        }
-        form {
-            input {
-                border: none;
-                border-radius: 3px 0 0 3px;
-                height: 34px;;
-                width: 95%;
-                padding: 0 15px;
-                color: $grey1;
-                font-size: 18px;
-            }
-            button {
-                vertical-align: top;
-                height: 34px;;
-                background: $grey3;
-                border: none;
-                border-radius: 0 3px 3px 0;
-                width: 35px;
-                .icon-search {
-                    height: 28px;
-                    width: 28px;
-                    padding: 5px;
-                }
-            }
-        }
-    }    
-
-    .breadcrumb {
-      background: $grey3;
-      padding: 16px 0 0 0;
-      margin: 0;
-      font-size: 14px;
-      >li+li:before {
-          padding: 0;
-          color: $grey2;
-          content: ">";
-      }
-      li a {
-          color: $grey2;
-          font-size: 14px;
-      }
-      li.active {
-          color: $grey2;
-          font-weight: 700;
-          font-size: 14px;
-      }
-    }
-
-    .search-list {
-      background: $white;      
-      margin: 16px 0 16px 0;
-
-      img {
-        object-fit: cover;
-        width: 180px;
-        height: 180px;
-        border-radius: 4px;
-      }
-
-      ol {
-        margin: 0 20px;
-      }
-      
-      li { 
-        padding: $padding1 0 $padding1 0;
-        border-bottom: solid 1px $grey3;
-      }
-
-      ol li div:nth-child(2) {
-        padding: $padding1 0 0 $padding1;
-      }
-
-      ol li div:nth-child(3) {
-        text-align: right;
-        font-size: 12px;
-        padding: 32px 0 0 0;
-      }
-
-      h2 {
-        padding: 32px 0 0 0;
-        font-size: 18px;
-      }
-
-      .price {
-        font-size: 24px;
-      }      
-    }
-
-    .product-view {
-      background: $white;      
-      margin: 16px 0 16px 0;
-      padding: 32px 0 0 0;
-
-      div.row:last-child {
-        padding: 32px 0 0 0;
-      }
-
-      img {
-        object-fit: cover;
-        width: 680px;
-        border-radius: 4px;
-      }
-
-      .new {
-        font-size: 14px;    
-        margin: 0 0 16px 0;
-      }
-
-      .price {
-        display: block;
-        font-size: 46px;    
-        margin: 32px 0 32px 0;
-      }
-
-      h2 {
-        font-size: 24px;
-        line-height: 30px;
-        margin: 0 0 32px 0;
-      }
-
-      button {
-        width: 75%;
-        background: #3483FA;
-        border: none;
-        margin: 0 32px 0 0;
-        height: 40px;
-      }
-
-      .description {
-        margin: 0 32px 0 32px ;
-        h3 {
-          font-size: 28px;
-          margin: 0 0 32px 0 ;
-          padding: 0;
-        }
-
-        p {
-          font-size: 16px;
-          margin: 0 0 32px 0;
-          padding: 0;
-        }
-      }
-    }
-
+    background: $grey3;              
+    
     a {
         color: $grey;
         &:hover {
@@ -180,34 +31,29 @@ body {
         }
     }
 
-    .row{
-      margin: 0;
-    }
-    
-    p {
+    p, nav, li {
       padding: 0;
       margin: 0;
     }
-
-    nav {
-      padding: 0;
-      margin: 0;
-    }
-
+   
     ol {
       list-style: none;
       padding: 0;
       margin: 0;
-    }
-    
-    li { 
-      padding: 0;
-      margin: 0;
-    }    
+    }         
     
     .loader {
       text-align: center;
       margin: 20px;
+    }
+
+    .content {
+      padding: 0;
+      margin: 0;
+    }
+
+    .margin-side-80 {
+      margin: 0 80px;
     }
 }
 
@@ -241,6 +87,21 @@ body {
             width: 300px;
             border-radius: 4px;
           }
+        }
+
+        div.searchbox-view {
+          div.col:nth-child(2) {
+              padding-right: 15px;
+          }
+
+          div.form {
+            display: flex;
+            margin-top: 10px;
+          }
+        }
+
+        div.breadcrumb-view {
+          padding-left: 15px;
         }
     }
 }
