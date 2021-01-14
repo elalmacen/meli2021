@@ -29,9 +29,13 @@ https://www.dropbox.com/t/5sPQDqbGCDa0AMBE
 
     http://localhost:3011/api/items/:item
 
-### Desde /front
+### Desde /front/meli
 
     npm start
+
+### URL FRONT
+
+    http://localhost:3000
 
 ### API test
 
@@ -41,7 +45,3 @@ https://www.dropbox.com/t/5sPQDqbGCDa0AMBE
 ### Front test
 
     npm run test -- --coverage --watchAll=false --u
-
-### URL FRONT
-
-    http://localhost:3000
