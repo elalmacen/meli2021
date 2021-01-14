@@ -28,7 +28,7 @@ class SearchService {
   }
 
   static async getItems(query) {
-    const searchUrl = `${MELI.API_URL}/sites/MLA/search?q=/${query}&limit=4`;
+    const searchUrl = `${MELI.API_URL}/sites/MLA/search?q=/${query}&limit=5`;
     const response = await axios.get(searchUrl);
     return response.data.results;
   }
