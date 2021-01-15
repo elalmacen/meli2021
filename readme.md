@@ -11,11 +11,11 @@ https://www.dropbox.com/t/e7obalToOERJtbc8
 
 ## Instalacion
 
-    cd front/meli
-    npm install
-    cd ../..
     cd back 
     npm install
+    cd ../
+    cd front/meli
+    npm install     
 
 ## Instrucciones
 
@@ -25,7 +25,7 @@ https://www.dropbox.com/t/e7obalToOERJtbc8
 
 ### Endpoints back
 
-    http://localhost:3011/api/items?q=q
+    http://localhost:3011/api/items?q=:q
 
     http://localhost:3011/api/items/:item
 
@@ -44,4 +44,5 @@ https://www.dropbox.com/t/e7obalToOERJtbc8
 
 ### Front test
 
+    cd front/meli
     npm run test -- --coverage --watchAll=false --u
