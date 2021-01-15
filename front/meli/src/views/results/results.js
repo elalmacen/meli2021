@@ -5,7 +5,7 @@ import useFetchDataSearch from "../../hooks/useFetchDataSearch";
 import '../../App.scss';
 
 function Results({searchParam}) {
-    const [products, categories, loading] = useFetchDataSearch(searchParam);     
+    const [products, categories, loading] = useFetchDataSearch(searchParam);
 
     return (
         <>            

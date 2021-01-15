@@ -1,39 +1,41 @@
 .search-list {
-    background: $white;      
-    margin: 16px 0 16px 0;
+  background: $white;      
+  margin: 16px 0 16px 0;
 
-    img {
-      object-fit: cover;
-      width: 180px;
-      height: 180px;
-      border-radius: 4px;
-    }
+  img {
+    object-fit: cover;
+    width: 180px;
+    height: 180px;
+    border-radius: 4px;
+  }
 
-    ol {
-      margin: 0 20px;
-    }
-    
-    li { 
-      padding: $padding1 0 $padding1 0;
-      border-bottom: solid 1px $grey3;
-    }
+  ol {
+    margin: 0 20px;
+  }
+  
+  li { 
+    padding: $padding1 0 $padding1 0;
+    border-bottom: solid 1px $grey3;
+  }
 
-    ol li div:nth-child(2) {
-      padding: $padding1 0 0 $padding1;
-    }
+  ol li div:nth-child(2) {
+    padding: $padding1 0 0 $padding1;
+  }
 
-    ol li div:nth-child(3) {
-      text-align: right;
-      font-size: 12px;
-      padding: 32px 0 0 0;
-    }
+  ol li div:nth-child(3) {
+    text-align: left;
+    font-size: 12px;
+    padding: 32px 0 0 0;
+  }
 
-    h2 {
-      padding: 32px 0 0 0;
-      font-size: 18px;
-    }
+  h2 {
+    padding: 32px 0 0 0;
+    font-size: 18px;
+    width: 400px;
+    margin: 0;
+  }
 
-    .price {
-      font-size: 24px;
-    }      
+  .price {
+    font-size: 24px;
+  }      
 }

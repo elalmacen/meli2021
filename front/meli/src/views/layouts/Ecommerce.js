@@ -11,13 +11,13 @@ function Ecommerce(props) {
     <div className="App">      
       <header>
         <Row className="justify-content-md-center margin-side-80">
-          <Col xs lg="10" className="content">
+          <Col xs md="10" className="content">
               <SearchBox />
           </Col>
         </Row>
       </header>
       <Row className="justify-content-md-center margin-side-80">
-        <Col xs lg="10" className="content">
+        <Col xs md="10" className="content">
           <Switch>
               <Route path='/items/:id' render={() => <Detail props={props} />} />
               <Route path='/items' render={() => <Results searchParam={props.location.search} />} />

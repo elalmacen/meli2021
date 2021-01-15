@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3011/api';
+import { API_URL } from '../config/config';
 
 const searchProducts = async (query) => {
     return fetch(`${API_URL}/items?q=${query}`);    

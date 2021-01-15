@@ -33,7 +33,7 @@ function SearchBox() {
     return (
         <Row className="searchbox-view">
             <Col xs lg="1">
-                <img src={logo} alt='MercadoLibre' className='logo' onClick={goHome} />
+                <img src={logo} alt='MELI CHALLENGE 2021' className='logo' onClick={goHome} />
             </Col>
             <Col>
                     <div className="form">

@@ -13,7 +13,7 @@ function Product({product, categories, notFound}) {
             <Col className='product-view'>
                 <Row>
                     <Col xs={12} md={8}>
-                        <img src={product.picture} alt='thumbnail'/>
+                        <img src={product.picture} alt='thumbnail' alt={product.title} />
                     </Col>
                     <Col xs={12} md={4}>
                         <div className='new'>{product.condition === 'new' ? 'Nuevo' : 'Usado'} - {product.sold_quantity > 1 ? `${product.sold_quantity} vendidos` : `${product.sold_quantity} vendido`}</div>
